@@ -14,9 +14,9 @@ const MessInput =({req})=> {
   }
 
   return (
-    <div className="">
-        <input type="text" placeholder="Type message here" onChange={handleInput} value={message}></input>
-        <button onClick={(e) => send(e)}>Send</button>
+    <div className="input_block">
+        <textarea className="input_field" type="text" placeholder="Type message here" onChange={handleInput} value={message}></textarea>
+        <button className="send_button" onClick={(e) => send(e)}>Send</button>
     </div>
   );
 }

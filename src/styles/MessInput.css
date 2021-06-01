@@ -1,0 +1,23 @@
+.input_block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.send_button{
+    width: 80px;
+}
+
+.input_field{
+    width: calc(100% - 80px);
+    border-radius: 10px;
+    border: 2px solid rgb(177, 177, 177);
+    padding: 5px;
+}
+
+.input_field:focus{
+    width: calc(100% - 80px);
+    border-radius: 10px;
+    border: 2px solid rgb(177, 177, 177);
+    padding: 5px;
+}
