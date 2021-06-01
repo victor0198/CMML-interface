@@ -1,3 +1,12 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
 .chat{
-    width: 200px;
+    width: 300px;
+    position: relative;
+}
+
+.phone{
+    height: 100vh;
 }

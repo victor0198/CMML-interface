@@ -14,6 +14,14 @@ function Message({message}) {
                         <p>
                             {message.data}
                         </p>
+                        <div className="data_block">
+                            <span className="id_name">
+                                #1
+                            </span>
+                            <span className="time">
+                                19:41
+                            </span>
+                        </div>
                     </div>
                 </div>);
             else
@@ -22,13 +30,21 @@ function Message({message}) {
                         <p>
                             {message.data}
                         </p>
+                        <div className="data_block">
+                            <span className="id_name">
+                                #1
+                            </span>
+                            <span className="time">
+                                19:41
+                            </span>
+                        </div>
                     </div>
                 </div>);
         else if(message.type === 'button')
             if(message.user === 'me')
                 return (<div className="message_right">
-                    <div className="button_msg">
-                        <button>{message.data[0]}</button>
+                    <div className="button-container">
+                        <button className="btn">{message.data[0]}</button>
                     </div>
                     <div className="my_message_body">
                         <p>
@@ -38,8 +54,8 @@ function Message({message}) {
                 </div>);
             else
             return (<div className="message_left">
-                <div className="button_msg">
-                    <button>{message.data[0]}</button>
+                <div className="button-container">
+                        <button className="btn">{message.data[0]}</button>
                 </div>
                 <div className="my_message_body">
                     <p>

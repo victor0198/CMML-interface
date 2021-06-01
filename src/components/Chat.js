@@ -22,9 +22,11 @@ const [newMessage, setNewMessage] = useState('');
     }
 
     return (
-        <div className="chat">
-            <MessagesList mes={newMessage}/>
-            <MessInput req={req}/>
+        <div className="main">
+            <div className="chat">
+                <MessagesList mes={newMessage}/>
+                <MessInput req={req}/>
+            </div>
         </div>
     );
 }
