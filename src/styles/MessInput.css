@@ -1,23 +1,35 @@
 .input_block{
-    width: 100%;
+    width: calc(100% - 6px);
     display: flex;
     flex-direction: row;
+    border-top: 1px solid #d0caca;
+    padding: 2px 3px;
+    background-color: #fff;
 }
 
 .send_button{
-    width: 80px;
+    width: 28px;
+    padding: 2px;
+    border: none;
+    outline: none;
+    display: grid;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.send_button img{
+    width: 22px;
 }
 
 .input_field{
-    width: calc(100% - 80px);
+    width: calc(100% - 28px);
     border-radius: 10px;
     border: 2px solid rgb(177, 177, 177);
     padding: 5px;
+    resize: none;
 }
 
 .input_field:focus{
-    width: calc(100% - 80px);
-    border-radius: 10px;
-    border: 2px solid rgb(177, 177, 177);
-    padding: 5px;
+    outline: none;
 }

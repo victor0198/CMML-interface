@@ -1,3 +1,10 @@
 .messages{
-    
+    height: calc(100vh - 85px);
+    padding: 10px 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.hidden{
+    display: none;
 }
