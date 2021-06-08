@@ -12,5 +12,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Integrate CMML into yor chat
+To use the [CMML compiler](https://github.com/victor0198utm/CMML/), we provided the [cmml_builder.js](./src/cmml_builder.js) file. It contains a function which returns an HTML structure, based on the back-end's response.
+

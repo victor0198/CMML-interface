@@ -14,26 +14,28 @@
 
 .my_message_body{
     color: white;
-    border: 1px solid #dfdfdf;
+    border: none;
     border-radius: 10px;
     border-bottom-right-radius: 0px;
-    width: min-content;
+    width: max-content;
+    max-width: 90%;
     margin-bottom: 5px;
-    background-color: rgb(170, 200, 255);
+    background-color: rgb(110, 154, 236);
 }
 
 .message_body{
-    border: 1px solid #afafaf;
+    color: rgb(58, 58, 58);
+    border: 1px solid #cecece;;
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     width: min-content;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .message_body p, .my_message_body p{
     margin: 5px 10px;
     padding-right: 20px;
-    font-size: 14px;
     text-align: left;
 }
 
@@ -58,6 +60,7 @@
 
 
 .btn {
+    min-width: 100px;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -65,29 +68,80 @@
     font-size: 14px;
     text-align: center;
     background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
+    box-shadow: 1px 1px 3px 1px rgb(153, 153, 153);
+    margin-bottom: 3px;
+}
+
+.btn:active{
+    box-shadow: none;
+}
+
+.data_block{
+    display: flex;
+    justify-content: space-between;
+    min-width: 80px;
+    padding: 0px 10px 5px 10px;
+    color: rgb(175, 175, 175);
 }
 
 .my_message_body .data_block{
-    display: flex;
-    justify-content: space-between;
-    min-width: 80px;
-    padding: 0px 10px 5px 10px;
-    color: rgb(189, 189, 189);
-    color: white;
+    color: rgb(223, 223, 251);
 }
 
 .message_body .data_block{
-    display: flex;
-    justify-content: space-between;
-    min-width: 80px;
-    padding: 0px 10px 5px 10px;
-    color: rgb(189, 189, 189);
+    color: rgb(170, 170, 170);
 }
 
 .id_name{
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .time{
-    font-size: 12px;
+    font-size: 11px;
+}
+
+.question{
+    background: #683eff;
+    box-shadow: 2px 2px 4px 0px #807d7d;
+    margin-bottom: 9px;
+}
+
+.qbtns{
+    display: flex;
+    justify-content: space-around;
+    margin: 4px;
+}
+
+.qbtns > button{
+    background-color: white;
+    min-width: 30px;
+    padding: 3px 12px;
+    border-radius: 6px;
+    border: none;
+    margin: 2px 4px;
+    box-shadow: 2px 2px 3px 0px #d7acff;
+}
+
+.qbtns > button:active{
+    box-shadow: none;
+}
+
+.gift{
+    width: 100px;
+}
+
+.error{
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background: #ff7c7c;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+.error p{
+    margin: 0px;
+    color: white;
+    font-size: 13px;
 }
