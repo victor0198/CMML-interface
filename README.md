@@ -13,5 +13,5 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Integrate CMML into yor chat
-To use the [CMML compiler](https://github.com/victor0198utm/CMML/), we provided the [cmml_builder.js](https://github.com/victor0198utm/CMML-interface/cmml_builder.js) file. It contains a function which returns an HTML structure, based on the back-end's response.
+To use the [CMML compiler](https://github.com/victor0198utm/CMML/), we provided the cmml_builder.js file, located in "./src". It contains a function which returns an HTML structure, based on the back-end's response.
 
